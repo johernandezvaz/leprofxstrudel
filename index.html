@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Le Prof Strudel Lab</title>
+    <meta property="og:image" content="https://bolt.new/static/og_default.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://bolt.new/static/og_default.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@strudel/web@1.0.3"></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">Le Prof Strudel Lab</div>
+      <div class="status" id="audio-status">Audio idle</div>
+    </header>
+
+    <main>
+      <div id="editor-container">
+        <textarea id="editor" spellcheck="false" placeholder='// Paste your Strudel code here
+// Example: s("bd sd hh*8").bank("RolandTR909")
+// or: note("c a f e").sound("piano")'></textarea>
+      </div>
+
+      <div id="controls">
+        <button id="play-btn" class="btn-play">Play</button>
+        <button id="stop-btn" class="btn-stop">Stop</button>
+      </div>
+
+      <div id="log" class="log"></div>
+
+      <div id="visualizer-container"></div>
+    </main>
+
+    <footer>
+      <a href="https://strudel.cc" target="_blank" rel="noopener noreferrer">Learn Strudel: Official Documentation</a>
+    </footer>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
